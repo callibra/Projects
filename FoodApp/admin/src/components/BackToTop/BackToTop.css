@@ -1,0 +1,44 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: visibility 0.4s, opacity 0.4s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .back-to-top.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .back-to-top button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .back-to-top button .button-text {
+    margin-right: 10px; 
+  }
+  
+  .back-to-top button:hover {
+    background-color: rgb(255, 70, 37);
+  }
+  
+  @media screen and (max-width: 750px) {
+    .back-to-top button .button-text {
+      display: none; 
+    }
+  
+    .back-to-top button .arrow {
+      display: inline; 
+      font-size: 20px; 
+    }
+  }
+
+  

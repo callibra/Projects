@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile{
+    width: 40px;
+}
+
+.welcome-admin h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: tomato;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 0.7s ease-out forwards 0.2s;
+}
+  
+@keyframes fadeInSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+

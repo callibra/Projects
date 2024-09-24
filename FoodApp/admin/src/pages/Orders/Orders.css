@@ -1,0 +1,112 @@
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item-food{
+    font-weight: 600;
+}
+
+.order-item-name{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.order-item-address{
+    margin-bottom: 10px;
+}
+
+.order-item-address-p{
+    padding: 10px 0px 0px 0px;
+}
+
+.order-item select {
+    background-color: #ffe8e4; 
+    border: 1px solid tomato; 
+    border-radius: 8px; 
+    width: max(14vw, 120px); 
+    padding: 12px 16px; 
+    outline: none;
+    font-size: 16px; 
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.order-item select option {
+    background-color: #ffe8e4; 
+    color: #333;
+}
+
+.order-item select:focus {
+    border-color: darkorange; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.no-orders-message {
+    font-size: 1.2em;          
+    color: #555;               
+    text-align: center;       
+    margin-top: 20px;          
+    padding: 20px;             
+    background-color: #f9f9f9;  
+    border: 1px solid #ddd;     
+    border-radius: 5px;        
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.delete-button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(255, 70, 37);
+  }
+  
+
+@media (max-width:1000px) {
+    .order-item{
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+    .order-item select{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .order-item img{
+        width: 40px;
+    }
+    .delete-button {
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        color: white;
+        background-color: tomato;
+        font-size: 12px;
+        cursor: pointer;
+      }
+}
+
+
+
+
+
+
+

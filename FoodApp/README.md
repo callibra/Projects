@@ -1,0 +1,1 @@
+Food apllication create with React, Node JS, Express JS, Mongo DB and Stripe payment platform.

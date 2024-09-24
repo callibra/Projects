@@ -1,0 +1,67 @@
+.notfoundTitle {
+  padding: 50px;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: bounceIn 1s ease forwards;
+}
+
+.notfoundMessage {
+  padding: 0px 0px 0px 180px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0;
+  opacity: 0.9;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .notfoundTitle {
+    font-size: 3rem; 
+  }
+
+  .notfoundMessage {
+    font-size: 1.10rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .notfoundTitle {
+    font-size: 2rem;
+  }
+
+  .notfoundMessage {
+    font-size: 0.8rem; 
+  }
+
+  .notfoundContainer a {
+    font-size: 0.5rem; 
+  }
+}
+
