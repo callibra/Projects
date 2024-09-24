@@ -1,0 +1,136 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 74%, rgba(245,245,245,1) 100%);
+    box-shadow: 11px 11px 5px 0px rgba(219,219,219,1);
+}
+
+#dark .contact-section{
+    background-color: rgb(26, 26, 26); 
+    background: none;
+    box-shadow: 11px 11px 5px 0px rgb(43, 43, 43);
+}
+
+.contact-form-image img{
+    height: 620px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contact-form input{
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#dark .contact-form input{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+.contact-form textarea{
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#dark .contact-form textarea{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+.custom-select-tag{
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#dark .custom-select-tag{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+.button-submit {
+    background-color: tomato;
+    padding: 3px;
+    border-radius: 30px;
+    border: 2px solid tomato;
+    color:white;
+    width: 40%;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+#dark .button-submit {
+    background-color: tomato;
+    color: white;
+    border: 2px solid white;
+}
+
+.button-submit:hover{
+    background-color: white;
+    border: 2px solid tomato;
+    transition-duration: 1s;
+    color: tomato;
+}
+
+#dark .button-submit:hover{
+    background-color: rgb(255, 248, 247);
+    color: tomato;
+    border: 2px solid tomato;
+}
+
+.contact-form-design{
+    padding-top: 30px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px; 
+    font-weight: 600;
+}
+
+#dark .error-message{
+    color: yellow;
+}
+
+.notification-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(0, 185, 0); 
+    display: flex;
+    justify-content: center;
+}
+  
+@media (max-width:767px) {
+    .contact-form-image img{
+       display: none;
+    }
+    .contact-section{
+        display: block; 
+        justify-content: normal; 
+        align-items: normal;
+    }
+    .button-submit{
+        margin-top: 70px;
+    }
+}
+
+
+

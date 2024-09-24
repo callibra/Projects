@@ -1,0 +1,78 @@
+.footer {
+    background-image: url(../../image/bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    font-size: 15px;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    border-top: 1px solid tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/* //////////////// 1van4e /////////////////////////////////// */
+
+@keyframes colorChangeIva {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.blank-link {
+    background: linear-gradient(to right, red,red, yellow,yellow,red,red, yellow,yellow, red,red,yellow,yellow);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 2px;
+    background-size: 200% 100%;
+    color: transparent; /* Make text color transparent to show gradient */
+    animation: colorChangeIva 15s linear infinite;
+}
+
+.blank-link:hover {
+    background: linear-gradient(to left, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+    transition-duration: 1s;
+    /* font-size: 19px; */
+}
+
+/* //////////////// 1van4e /////////////////////////////////// */
+
+@media (max-width:575px) {
+    .footer{
+        background-image: none;
+        background-color: rgb(15, 15, 15);
+        font-size: 12px;
+    }
+}
+
+

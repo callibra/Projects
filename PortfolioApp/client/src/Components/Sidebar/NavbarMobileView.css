@@ -1,0 +1,138 @@
+.mobile-view-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-header{
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.971);
+    color: white;
+    padding: 5px;
+    border-bottom: 3px solid tomato;
+}
+
+#dark .navbar-header{
+    background-color: rgba(255, 99, 71, 0.968);
+    border-bottom: 3px solid white;
+}
+
+.navbar-header p svg{
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mobile-nav ul li{
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    /* text-shadow: 3px 3px 5px #ffffff80; */
+    padding: 5px;
+}
+
+.mobile-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item-mobileview .active {
+    background-color: transparent; 
+    border-bottom: 2px solid yellow; 
+    border-radius: 0;
+    padding: 7px 0; 
+    width: 90%;
+    display: block; 
+    color:yellow;
+    /* text-shadow: 2px 2px 4px yellow; */
+}
+
+#dark .mobile-nav{
+    box-shadow: 5px 5px 5px 0px tomato;
+}
+
+.mobile-nav{
+    position: absolute; 
+    margin-top: 20px;
+    padding: 1px;
+    height: auto;
+    width: 210px;
+    background-color: rgba(56, 56, 56, 0.972);
+    border-radius: 5px;
+    margin-left: 2px;
+    box-shadow: 5px 5px 5px 0px rgb(86, 86, 86);
+}
+
+.logo{
+    margin: 10px auto;
+    border-radius: 90px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    vertical-align: middle;
+    object-fit: cover;
+    border:3px solid yellow;
+    box-shadow: 5px 5px 5px 0px rgb(99, 99, 99);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff6347; 
+    }
+    12.5% {
+        color: #ffbb33; 
+    }
+    25% {
+        color: #4caf50; 
+    }
+    37.5% {
+        color: #ffeb3b; 
+    }
+    50% {
+        color: #2196f3; 
+    }
+    62.5% {
+        color: #3f51b5;
+    }
+    75% {
+        color: #ff3bf2; 
+    }
+    87.5% {
+        color: #9c27b0; 
+    }
+    100% {
+        color: #ff6347; 
+    }
+}
+
+.additional-title-mobile {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px currentColor;
+    animation: colorChangeAbout 10s infinite; 
+}
+
+#dark .additional-title-mobile{
+    display: none;
+}
+
+@media (min-width:1000px) {
+    .mobile-view-navbar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

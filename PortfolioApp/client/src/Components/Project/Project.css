@@ -1,0 +1,172 @@
+.project-section{
+    margin-top: 70px;
+}
+
+.project-list{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 11px 11px 5px 0px rgba(219,219,219,1);
+}
+
+#dark .project-list{
+    background-color: rgb(37, 37, 37);
+    box-shadow: 11px 11px 5px 0px rgb(43, 43, 43);
+}
+
+.project-list-opened{
+    border-left: 5px solid tomato;
+}
+
+#dark .project-list-opened{
+    border-left: 5px solid tomato;
+}
+
+.project-list:hover{
+    border-left: 5px solid tomato;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#dark .project-list:hover{
+    border-left: 5px solid tomato;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.title-and-collapse-option{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.tech-used-in-project{
+    margin-top: 20px;
+    margin: 5px;
+}
+
+.tech-used-in-project p:hover{
+    background-color:tomato;
+}
+
+.tech-used-in-project p{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 90px;
+    padding: 4px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.live-demo-button{
+    background-color:tomato;
+    border-radius: 90px;
+    border: 1px solid tomato;
+    width: fit-content;
+    margin: 10px 0px 5px 5px;
+    padding: 3px;
+}
+
+.live-demo-button:hover{
+    background-color: white;
+    transition-duration: 1s;
+    border: 1px solid tomato;
+}
+
+.live-demo-button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.live-demo-button a:hover{
+    color: tomato;
+}
+
+.description{
+    margin: 5px;
+}
+
+.title-x{
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+
+.readmore{
+    color: tomato;
+}
+
+/* .readmore:hover{
+    color: rgb(22, 248, 2);
+} */
+
+.project-image {
+    max-width: 100%;     
+    height: auto;      
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 16px; 
+    margin-bottom: 16px;    
+    display: block;     
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;   
+  }
+  
+  .project-image:hover {
+    box-shadow: 5px 5px 5px 0px rgb(192, 192, 192);
+    transform: scale(1.01); 
+  }
+
+  #dark .project-image:hover{
+    box-shadow: 11px 11px 5px 0px rgb(43, 43, 43);
+  }
+
+  /* ////////////////dark theme//////////////////////// */
+
+ #dark .live-demo-button{
+    align-content: center;
+    background-color:tomato;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+#dark .live-demo-button:hover{
+    background-color: white;
+    transition-duration: 1s;
+    border: 1px solid tomato;
+    font-weight: 600; 
+}
+
+#dark .live-demo-button a{
+    color: white;
+}
+
+#dark .live-demo-button a:hover{
+    color: tomato;
+}
+
+#dark .tech-used-in-project p:hover{
+    background-color: tomato;
+    border: 1px solid white;
+}
+
+#dark .tech-used-in-project p{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 90px;
+    border: 1px solid white;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+  
+
+
+
+  
+
+  
+

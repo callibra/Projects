@@ -1,0 +1,252 @@
+.container-fluid{
+    background-image: url(../../image/bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    border-bottom: 1px solid tomato;
+}
+
+.home{
+    height: 300px;
+    color: white;
+    border-bottom: none;
+}
+
+.home-content h1{
+    font-weight: 700;
+}
+
+.home-content{
+    padding: 10px;
+    margin-top: 100px;
+    backdrop-filter: blur(1px);
+    border-radius: 200px;
+}
+
+.home-content h2{
+    margin-top: 30px;
+    color: rgb(241, 227, 28);
+    font-weight: 600;
+}
+
+.button-for-action{
+    display: flex;
+}
+
+.hire-me-button{
+    background-color: tomato;
+    text-align: center;
+    width: 180px;
+    padding: 3px;
+    border-radius: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hire-me-button:hover{
+    background-color: white;
+    width: 200px;
+    color:tomato;
+    border: 2px solid tomato;
+    transition-duration: 1s;
+}
+
+.get-resume-button{
+    background-color:rgb(239, 239, 43);
+    text-align: center;
+    width: 180px;
+    padding: 3px;
+    border-radius: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid tomato;
+    font-size: 17px;
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.get-resume-button:hover{
+    background-color: tomato;
+    width: 200px;
+    color: tomato;
+    border: 2px solid white;
+    transition-duration: 1s;
+}
+
+.get-resume-button a{
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+
+.get-resume-button a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.theme-change{
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: tomato;
+    right: 0;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 39px;
+    position: fixed;
+    top: 150px;
+    margin-top: 255px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* ////////////////////dark theme////////////////// */
+
+#dark .theme-change{
+    background-color: tomato;
+}
+
+#dark .theme-change:hover{
+    background-color:tomato; 
+    transition-duration: 1s;
+}
+
+.sun-theme-icon:hover{
+    color:black;
+    transition-duration: 1s;
+}
+
+.moon-theme-icon:hover{
+    color: rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+/* ///////////////////////dark theme////////////////////// */
+
+.theme-change:hover {
+    background-color:tomato; 
+    transition-duration: 1s;
+}
+
+.sun-theme-icon{
+    animation: rotation-1 infinite 5s linear;
+    color: white;
+}
+
+@keyframes rotation-1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.moon-theme-icon{
+    animation: rotation-2 infinite 5s linear;
+    color: white;
+}
+
+@keyframes rotation-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:600px) {
+    .button-for-action{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    .theme-change{
+        margin-right: 10px;
+        top: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #dark .theme-change{
+        background-color: rgb(36, 36, 36);
+    }
+    #dark .theme-change:hover{
+        background-color: rgb(36, 36, 36);
+        transition-duration: 1s;
+    }
+    .sun-theme-icon:hover{
+        animation: rotation-1 infinite 5s linear;
+        color: tomato;
+    }
+}
+
+@media (max-width:575px) {
+    .theme-change{
+        margin-right: 20px;
+        top: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #dark .theme-change{
+        background-color: rgb(36, 36, 36);
+    }
+    #dark .theme-change:hover{
+        background-color: rgb(36, 36, 36);
+        transition-duration: 1s;
+    }
+    .sun-theme-icon:hover{
+        animation: rotation-1 infinite 5s linear;
+        color: tomato;
+    }
+}
+
+@media (max-width:248px) {
+    .theme-change{
+        margin-right: 35px;
+        top: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #dark .theme-change{
+        background-color: rgb(36, 36, 36);
+    }
+    #dark .theme-change:hover{
+        background-color: rgb(36, 36, 36);
+        transition-duration: 1s;
+    }
+    .sun-theme-icon:hover{
+        animation: rotation-1 infinite 5s linear;
+        color: tomato;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

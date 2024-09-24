@@ -1,0 +1,67 @@
+.workexperience-section{
+    margin-top: 70px;
+}
+
+.timeline-section{
+    margin-top: 30px;
+}
+
+.tech-skills p{
+    background-color: rgb(33, 33, 33);
+    border-radius: 90px;
+    border: 1px solid white;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+.tech-skills p:hover{
+    background-color: tomato;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.date-class{
+    color: tomato;
+}
+
+.company-demo-button{
+    background-color:tomato;
+    border-radius: 90px;
+    border: 1px solid white;
+    font-weight: 600;
+    width: fit-content;
+    margin: 10px 0px 5px 5px;
+    padding: 3px;
+}
+
+.company-demo-button:hover{
+    background-color: white;
+    border: 1px solid tomato;
+    transition-duration: 1s;
+}
+
+.company-demo-button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.company-demo-button a:hover{
+    color: tomato;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* /////////////////////////////////////////////// */
+
+#dark .date-class{
+    color: white;
+}
+
+@media (max-width:1169px) {
+    .date-class{
+        color: rgb(0, 0, 0);
+    }
+}

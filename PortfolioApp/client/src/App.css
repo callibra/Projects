@@ -1,0 +1,28 @@
+::-webkit-scrollbar{
+    width: 8px;
+    height: auto;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 00 5px rgb(103, 100, 109);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(255, 51, 15);
+}
+
+#dark{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.scroll-to-top:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+  

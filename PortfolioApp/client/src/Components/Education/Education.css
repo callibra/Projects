@@ -1,0 +1,38 @@
+.education-section{
+    margin-top: 70px;
+}
+
+.timeline-education-section{
+    margin-top: 30px;
+}
+
+.education-demo-button{
+    background-color: tomato;
+    border-radius: 90px;
+    border: 1px solid white;
+    font-weight: 600;
+    width: fit-content;
+    margin: 10px 0px 5px 5px;
+    padding: 3px;
+}
+
+.education-demo-button:hover{
+    background-color: white;
+    border: 1px solid tomato;
+    transition-duration: 1s;
+}
+
+.education-demo-button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.education-demo-button a:hover{
+    color: tomato;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
