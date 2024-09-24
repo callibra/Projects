@@ -83,7 +83,7 @@ const Education = () => {
                   rel="noopener noreferrer"
                   href={item.educationlink}
                 >
-                  Work link <HiOutlineExternalLink size={18}/>
+                  School link <HiOutlineExternalLink size={18}/>
                 </a>
               </div>
             </VerticalTimelineElement>
