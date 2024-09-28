@@ -6,6 +6,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
 import { GrContact } from "react-icons/gr";
 import { Fade } from "react-awesome-reveal";
+import {Link} from "react-scroll"
 
 const Home = ({ theme, changeTheme }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -45,13 +46,8 @@ const Home = ({ theme, changeTheme }) => {
         </Fade>
         <Fade>
           <div className="button-for-action">
-            <div className="hire-me-button">
-              <a
-                href="#contact"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Hire Me <GrContact size={18} />
-              </a>
+          <div className="hire-me-button">
+            <Link to="contact" spy={true} smooth={true} duration={100} offset={-100}>Here Me <GrContact size={18}/></Link>
             </div>
             <div className="get-resume-button">
               <a
