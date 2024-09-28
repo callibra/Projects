@@ -151,8 +151,8 @@ const Contact = () => {
                       Select Job Types
                     </option>
                     <option value="Full-time">Full-time</option>
-                    <option value="Working Student">Working Student</option>
                     <option value="Part-time">Part-time</option>
+                    <option value="Remote">Remote</option>
                     <option value="Contract">Contract</option>
                   </select>
                   {errors.jobType && (
