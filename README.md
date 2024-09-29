@@ -1,1 +1,1 @@
-My Projects with MERN Technology.
+Projects with MERN Technology.
