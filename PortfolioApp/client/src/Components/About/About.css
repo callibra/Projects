@@ -64,6 +64,44 @@
     background-color: yellowgreen;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .github-button {
+    background-color: #333; /* Crna boja za GitHub */
+  }
+  
+  .linkedin-button {
+    background-color: #0077b5; /* Plava boja za LinkedIn */
+  }
+  
+  .upwork-button {
+    background-color: #6fbb4f; /* Zelena boja za Upwork */
+  }
+  
+  .gmail-button {
+    background-color: #db4437; /* Crvena boja za Gmail */
+  }
+  
+  .button:hover {
+    opacity: 0.8; /* Lagano smanjenje prozirnosti na hover */
+  }
+
 @keyframes colorChangeAbout {
     0% {
         color: #ff6347; 
@@ -108,7 +146,6 @@
     font-size: 18px;
 }
 
-
 .line-hr{
     border: 0;
     height: 3px; 
@@ -125,13 +162,37 @@
     } */
 }
 
-@media (max-width:991px) {
+/* @media (max-width:991px) {
     .line-hr{
         display: none;
     }
     .additional-title {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+} */
+
+@media (max-width:1199px) {
+    .colored-word {
+        font-size: 15px;
+    }
+    .about-image img {
+        height: 333px;
+        width: 333px;
+    }
+    .button-container {
+        margin-bottom: 25px;
+    }
+      .about-section{
+        height: 550px;
+    }
+}
+@media (max-width:991px) {
+    .button-container {
+        margin-bottom: 25px;
+      }
+      .about-section{
+        height: auto;
     }
 }
 
@@ -142,10 +203,23 @@
     }
 }
 
-@media (max-width:400px) {
-    .about-image img {
+@media (max-width:455px) {
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Po dva dugmeta u redu */
+        gap: 15px;
+    }
+      .about-image img {
         height: 150px;
         width: 150px;
+    }
+}
+
+@media (max-width:300px) {
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Po dva dugmeta u redu */
+        gap: 15px;
     }
 }
 

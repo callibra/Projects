@@ -36,15 +36,16 @@
 .mobile-nav ul li a{
     text-decoration: none;
     color: white;
+    transition: 0.2s all ease-in-out;
 }
 
 .nav-item-mobileview .active {
     background-color: transparent; 
-    border-bottom: 2px solid yellow; 
+    border-bottom: 3px solid yellow; 
     border-radius: 0;
     padding: 7px 0; 
     width: 90%;
-    display: block; 
+    /* display: block;  */
     color:yellow;
     /* text-shadow: 2px 2px 4px yellow; */
 }
@@ -56,7 +57,7 @@
 .mobile-nav{
     position: absolute; 
     margin-top: 20px;
-    padding: 1px;
+    padding: 10px 10px 30px 10px;
     height: auto;
     width: 210px;
     background-color: rgba(56, 56, 56, 0.972);
@@ -128,6 +129,7 @@
         display: none;
     }
 }
+
 
 
 
