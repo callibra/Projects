@@ -116,6 +116,14 @@
     transition-duration: 1s;
 }
 
+.colored-title-home {
+    position: absolute; 
+    right: 25px;  
+    transform: translateY(-10%); 
+    text-shadow: 2px 2px 4px currentColor; 
+    animation: colorChangeAbout 10s infinite; 
+}
+
 /* ///////////////////////dark theme////////////////////// */
 
 .theme-change:hover {
@@ -154,13 +162,6 @@
     }
 }
 
-@media (max-width:600px) {
-    .button-for-action{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 @media (max-width:1000px) {
     .theme-change{
         margin-right: 10px;
@@ -180,6 +181,16 @@
     .sun-theme-icon:hover{
         animation: rotation-1 infinite 5s linear;
         color: tomato;
+    }
+    .colored-title-home {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .button-for-action{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -226,6 +237,7 @@
         color: tomato;
     }
 }
+
 
 
 

@@ -62,6 +62,7 @@ const Home = ({ theme, changeTheme }) => {
           </div>
         </Fade>
       </div>
+      <h3 className="colored-title-home">My Passion for Coding !!!</h3>
     </div>
   );
 };
