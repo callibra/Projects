@@ -149,7 +149,7 @@ const Project = () => {
     <div className="container project-section" id="project">
       <Fade>
       <div className="section-title">
-        <h5>Project</h5>
+        <h5>Projects</h5>
         <span className="line"></span>
       </div>
       </Fade>
